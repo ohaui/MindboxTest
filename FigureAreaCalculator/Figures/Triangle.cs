@@ -34,10 +34,10 @@ public class Triangle : IFigure
 
     #endregion
     
-    /// <param name="a">Вершина треугольника</param>
-    /// <param name="b">Вершина треугольника</param>
-    /// <param name="c">Вершина треугольника</param>
-    /// <exception cref="ArgumentOutOfRangeException">Одна из вершин
+    /// <param name="a">Cторона треугольника</param>
+    /// <param name="b">Cторона треугольника</param>
+    /// <param name="c">Cторона треугольника</param>
+    /// <exception cref="ArgumentOutOfRangeException">Одна из сторон
     /// треугольника меньше или равна нулю</exception>
     public Triangle(double a, double b, double c)
     {
@@ -48,7 +48,7 @@ public class Triangle : IFigure
         if (A <= 0 || B <= 0 || C <= 0)
         {
             throw new ArgumentOutOfRangeException(string.Empty,
-                "Вершина треугольника не может быть меньше или равна нулю.");
+                "Cторона треугольника не может быть меньше или равна нулю.");
         }
     }
 
