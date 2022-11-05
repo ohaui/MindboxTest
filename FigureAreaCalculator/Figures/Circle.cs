@@ -5,7 +5,6 @@ namespace FigureAreaCalculator.Figures;
 
 public class Circle : IFigure
 {
-    #region Properties
 
     /// <summary>
     /// Радиус круга
@@ -17,7 +16,6 @@ public class Circle : IFigure
     /// </summary>
     public double Area => CalculateArea();
 
-    #endregion
     
     /// <param name="radius">Радиус круга</param>
     /// <exception cref="ArgumentOutOfRangeException">Радиус меньше нуля</exception>
@@ -31,7 +29,6 @@ public class Circle : IFigure
         }
     }
 
-    #region Methods
 
     /// <summary>
     /// Вычисляет площадь круга
@@ -42,6 +39,5 @@ public class Circle : IFigure
         return Math.PI * Math.Pow(Radius, 2);
     }
 
-    #endregion
     
 }
