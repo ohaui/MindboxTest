@@ -5,7 +5,6 @@ namespace FigureAreaCalculator.Figures;
 
 public class Triangle : IFigure
 {
-    #region Properties
 
     /// <summary>
     /// Вершина треугольника
@@ -32,7 +31,6 @@ public class Triangle : IFigure
     /// </summary>
     public bool Rightangled => IsRightangled();
 
-    #endregion
     
     /// <param name="a">Cторона треугольника</param>
     /// <param name="b">Cторона треугольника</param>
@@ -52,7 +50,6 @@ public class Triangle : IFigure
         }
     }
 
-    #region Methods
 
     /// <summary>
     /// Проверяет является ли треугольник прямоугольным
@@ -76,6 +73,4 @@ public class Triangle : IFigure
         var perimeter = (A + B + C) / 2;
         return Math.Sqrt(perimeter * (perimeter - A) * (perimeter - B) * (perimeter - C)); 
     }
-
-    #endregion
 }
